@@ -1,0 +1,14 @@
+<!--index.wxml-->
+<view class="container">
+  <!-- 基本事件使用 -->
+  <!-- bindtap绑定事件 -->
+ <button bindtap="buttonTapHandle">点击</button>
+ <!-- 事件冒泡 -->
+ <!-- catchtap可以绑定并阻止冒泡 -->
+ <view bindtap="outerHandle"   style="width:200px; height:200px;background-color: red">
+   <view catchtap="innerHandle"   style="width:100px; height:100px;background-color: blue"></view>
+</view>
+<!-- 事件传参 -->
+<button bindtap="tap2Handle" data-name="zhangsan">点击</button>
+<!-- 通过data-name传参 -->
+</view>

@@ -1,0 +1,56 @@
+/* pages/todos/todos.wxss */
+.container{
+  border-top: 1rpx solid #e0e0e0;/*最上面的那层横线*/
+  padding: 0;
+}
+.search{
+  display: flex;
+  margin: 20rpx;
+  padding: 20rpx;
+  border: 1rpx solid #e0e0e0;
+  border-radius: 5rpx;/*圆角*/
+  box-shadow: 0 0 5rpx #e0e0e0;
+  align-items: center;
+  width: 85%;
+}
+.search image{
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 20rpx;
+}
+.todos{
+  width: 90%;
+  margin: 20rpx;
+  border: 1rpx solid #e0e0e0;
+  border-radius: 5rpx;/*圆角*/
+  box-shadow: 0 0 5rpx #e0e0e0;
+}
+.todos .item{
+  display: flex;
+  padding: 20rpx;
+  border-bottom: 1rpx  solid#e0e0e0;
+  align-items: center;
+}
+  /*最后一个item，防止有边框，使得最后一行边框中*/
+.todos .item:last-child{
+  border-bottom: 0;
+}
+/* 因为todos的item的左右icon各有宽度，中间宽度自适应，故中间flex=1就可以 */
+.todos .item text{
+  flex: 1;
+  margin-left: 20rpx;
+  font-size: 40rpx;
+  color: #444;
+}
+.todos .item.completed text{
+  color: #888;
+  text-decoration: line-through;
+}
+
+.footer{
+  width: 90%;
+  display: flex; 
+  justify-content:space-between;
+  margin: 20rpx;
+  font-size: 30rpx;
+}

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="707524db-1408-4247-88b4-e507d3b43338" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="package.json" />
+        <option value="Kotlin Class" />
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="localRepository" value="D:\Maven-repository\repository" />
+        <option name="mavenHome" value="D:/软件/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Maven-repository\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1i7d9UdzwqMX7QlxC9iJ3LJgjng" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Language Defaults" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyKotlinDeclarationDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.imooc.Factoty" />
+      <recent name="org.imooc.component" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MyMain" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.imooc.MyMain" />
+      <module name="factoryModel" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.imooc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MyMain" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="707524db-1408-4247-88b4-e507d3b43338" name="Default Changelist" comment="" />
+      <created>1601262415753</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601262415753</updated>
+      <workItem from="1601262429227" duration="15152000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="488" y="76" key="#com.intellij.ide.util.MemberChooser" timestamp="1601312941528">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="488" y="76" key="#com.intellij.ide.util.MemberChooser/0.0.1366.768@0.0.1366.768" timestamp="1601312941528" />
+    <state x="413" y="163" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1601263325977">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="413" y="163" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1366.768@0.0.1366.768" timestamp="1601263325977" />
+    <state width="1322" height="187" key="GridCell.Tab.0.bottom" timestamp="1601318357213">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="187" key="GridCell.Tab.0.bottom/0.0.1366.768@0.0.1366.768" timestamp="1601318357213" />
+    <state width="1322" height="187" key="GridCell.Tab.0.center" timestamp="1601318357213">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="187" key="GridCell.Tab.0.center/0.0.1366.768@0.0.1366.768" timestamp="1601318357213" />
+    <state width="1322" height="187" key="GridCell.Tab.0.left" timestamp="1601318357213">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="187" key="GridCell.Tab.0.left/0.0.1366.768@0.0.1366.768" timestamp="1601318357213" />
+    <state width="1322" height="187" key="GridCell.Tab.0.right" timestamp="1601318357213">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state width="1322" height="187" key="GridCell.Tab.0.right/0.0.1366.768@0.0.1366.768" timestamp="1601318357213" />
+    <state x="186" y="15" key="SettingsEditor" timestamp="1601266773561">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="186" y="15" key="SettingsEditor/0.0.1366.768@0.0.1366.768" timestamp="1601266773561" />
+    <state x="53" y="87" key="new project wizard" timestamp="1601262859289">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="53" y="87" key="new project wizard/0.0.1366.768@0.0.1366.768" timestamp="1601262859289" />
+    <state x="425" y="15" key="refactoring.ChangeSignatureDialog" timestamp="1601316972416">
+      <screen x="0" y="0" width="1366" height="768" />
+    </state>
+    <state x="425" y="15" key="refactoring.ChangeSignatureDialog/0.0.1366.768@0.0.1366.768" timestamp="1601316972416" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/org.imooc.plant/org/imooc/factory/SimpleFactory.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>

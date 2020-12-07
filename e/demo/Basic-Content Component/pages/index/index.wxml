@@ -1,0 +1,16 @@
+<!--index.wxml-->
+<view class="container">
+<!-- 1.icon 图标-->
+<!-- success, success_no_circle, info, warn, waiting, cancel, download, search, clear  -->
+<!-- type： 图标类型，只能是规定范围类型，其他的必须以图片方式使用 -->
+<icon type="success"></icon>
+<icon type="success_no_circle"></icon>
+<icon type="info"></icon>
+<icon type="warn"></icon>
+<icon type="waiting"></icon>
+<icon type="cancel"></icon>
+<icon type="download"></icon>
+<icon type="search"></icon>
+<icon type="clear"></icon>
+
+</view>

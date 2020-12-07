@@ -1,0 +1,37 @@
+  {
+  "pages": ["pages/index/index", "pages/logs/logs"],
+  "window": {
+    "navigationBarBackgroundColor": "#219bf3",
+    "navigationBarTextStyle":  "white",
+    "navigationBarTitleText": "weixin",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#444",
+    "selectedColor": "#219bf3",
+    "backgroundColor": "#e0e0e0",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/images/home.png",
+        "selectedIconPath": "/images/home-actived.png"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "text": "日志",
+        "iconPath": "/images/note.png",
+        "selectedIconPath": "/images/note-actived.png"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true
+}

@@ -1,0 +1,56 @@
+<!--index.wxml-->
+<!--1. 原始代码 -->
+<!-- <view class="container"> -->
+  <!-- 图标 -->
+  <!-- <view class="header"> 
+    <image src="../../images/sign.png" mode="aspectFit"/>
+  </view> -->
+  <!-- 用户名、密码输入框 -->
+  <!-- <view class="inputs">
+    <input class="username" placeholder="请输入用户名" value="{{username}}" bindinput="usernameChangeHandle"/>
+    <input class="password" placeholder="请输入密码" type="password"value="{{password}}" bindinput="passwordChangeHandle"/>
+  </view> -->
+  <!-- 登陆、注册按钮 -->
+  <!-- <view class="buttons">
+    <button type="primary" bindtap="loginHandle">登陆</button>
+    <button type="default">注册</button>
+  </view>
+</view> -->
+
+<!-- 2.抽象用户名、文本框事件函数 -->
+<!-- <view class="container"> -->
+  <!-- 图标 -->
+  <!-- <view class="header"> 
+    <image src="../../images/sign.png" mode="aspectFit"/>
+  </view> -->
+  <!-- 用户名、密码输入框 -->
+  <!-- <view class="inputs">
+    <input class="username" placeholder="请输入用户名" value="{{username}}" bindinput="inputChangeHandle" data-prop="username"/>
+    <input class="password" placeholder="请输入密码" type="password" value="{{password}}" bindinput="inputChangeHandle" data-prop="password"/>
+  </view> -->
+  <!-- 登陆、注册按钮 -->
+  <!-- <view class="buttons">
+    <button type="primary" bindtap="loginHandle">登陆</button>
+    <button type="default">注册</button>
+  </view>
+</view> -->
+
+<!-- 3.form表单 -->
+<form bindsubmit="loginHandle">
+    <view class="container">
+    <!-- 图标 -->
+    <view class="header"> 
+      <image src="../../images/sign.png" mode="aspectFit"/>
+    </view>
+    <!-- 用户名、密码输入框 -->
+    <view class="inputs">
+      <input class="username" name="username" placeholder="请输入用户名" value="{{username}}"/>
+      <input class="password" type="password" name="password" placeholder="请输入密码"  value="{{password}}"/>
+    </view>
+    <!-- 登陆、注册按钮 -->
+    <view class="buttons">
+      <button type="primary" form-type="submit">登陆</button>
+      <button type="default">注册</button>
+    </view>
+  </view>
+</form>

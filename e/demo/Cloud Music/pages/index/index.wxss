@@ -1,0 +1,129 @@
+/**index.wxss**/
+page{
+  /* 把page设为100%，防止干扰 */
+  height: 100%;
+}
+/* 总容器（body） */
+.root{
+  display: flex;/*把root设为弹性盒子y*/
+  flex-direction: column;/*把root主轴设为y*/
+  height: 100%;
+  background-color: #1dc275;
+}
+/* 横向标签栏 */
+.tabs{
+  /* 此出不需要高度，容器内标签的内容，足以撑起容器的高度 */  
+    /* height: 50px; */
+  background-color: pink;
+  display: flex;/*要想把此标签横向平分，把父标签设为弹性盒子*/
+}
+/* 横向标签栏item */
+.tabs .item{
+  flex: 1;/* 让所有的item横向平分宽度 */
+  text-align: center;/*让每一个item居中 */
+  background-color: pink;
+  color: white;/*字体颜色*/
+  padding: 5px 0;/*上下5px,左右0 */
+}
+/* 给默认的加颜色与下划线 */
+/*同时具有item、active类的元素*/
+.tabs .item.active{
+  color: #fff;
+  border-bottom: 2px solid #e9232c;
+}
+/* 主体内容 */
+.content{
+  flex: 100;/*此处值随便写，不过多个相同标签的话，数值会成为比例值*/
+  background-color:#35473f;
+  color: #ccc;
+  overflow: hidden;/*滚动条*/
+}
+/*----------------------------------------播放条功能区------------------------------------------*/
+/***播放条区域*/
+.player{
+  display: flex;/*子标签需要平分，所以它需设为盒模型*/
+  height: 50px;  
+  background-color: #fff;
+}
+/*海报的图片*/
+.poster image{
+  width: 40px;
+  height: 40px;
+  margin: 5px;
+}
+/***歌曲信息区域*/
+.info{
+  /*把剩下的所有空间占满，因为海报与播放控制区 宽度是固定宽度*/
+  flex: 1;
+  color: green;
+  font-size: 15px;
+  /* 可以使用下面的实现内部信息换行 */ 
+  /* display: flex; 
+  flex-direction: column;  */
+    margin: 5px;
+
+}
+/***歌曲区的子信息*/
+.info text{
+  /* 因为display: block，会让标签成为块，自动换行 */
+  display: block;
+  font-size: 16px;
+  color: black;
+}
+/*播放控制的图片*/
+.controls image{
+  width: 40px;
+  height: 40px;
+  margin: 5px 2px;
+}
+/*-------------------------其他区----------------*/
+/*轮播图的图片*/
+.slide image{
+  height: 130px;
+  width: 100px;
+}
+/*音乐入口*/
+.portals{
+  display: flex;/*为了被子标签item平分，故盒模型*/
+  margin-bottom: 10px;
+}
+/*音乐入口每个item */
+.portals .item{
+  flex: 1;/*平分portals区域作用*/
+  color: #fff;
+  align-items: center;
+}
+/*音乐入口每个item的图片 */
+.portals .item image{
+  height: 80px;
+  width: 90px;
+  display: block;/*块状元素，自动换行，让图片与信息分开*/
+  margin: 10px auto;/*图片自然居中*/
+}
+/*音乐入口每个item的文本 */
+.portals .item text{
+display: block;/*块，可以居中操作*/
+font-size:12px ;
+text-align: center;
+}
+
+.musicList .title{
+  margin: 5px 10px;
+}
+.musicList .inner{
+  display: flex;
+  flex-wrap:wrap ;/*弹性盒子换行*/
+}
+.musicList .inner .item{
+ margin: 0 auto;/*让所有item分离*/
+ width: 33.33333333333333%;/*让同一行3个item*/
+}
+.musicList .inner .item image{
+  display: block;/*把图片设为块，可以自动换行(2行，需换行)*/
+  height: 130px;
+  width: 110px;
+}
+.musicList .inner .item text{
+  align-items: center;
+  width: 110px;
+}

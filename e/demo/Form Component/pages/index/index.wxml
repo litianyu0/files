@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<!-- <view class="container"> -->
+  <!-- type：控制类型，primary，default，warn -->
+ <!-- <button type="primary">按钮</button>
+ <button type="default">按钮</button>
+ <button type="warn">按钮</button> -->
+
+<!-- size尺寸大小 default、mini-->
+ <!-- <button type="primary" size="mini" >按钮</button> -->
+ <!-- plain镂空 true、false-->
+ <!-- <button type="default" >按钮</button> -->
+ <!-- hover-class指按钮按下去效果（hover指的是按下）-->
+ <!-- <button hover-class="btn-active">按钮</button> -->
+
+<!-- 2.checkbox -->
+<!-- <view class="container">
+        <checkbox-group bindchange="checkboxChange">
+          <label class="checkbox" wx:for="{{items}}" wx:key="{{item.value}}">
+            <checkbox value="{{item.value}}" checked="{{item.checked}}"/>{{item.name}}
+          </label>
+        </checkbox-group>
+</view> -->
+
+<!-- 3.input -->
+<view class="container">
+  <input class="input1" placeholder="请输入内容" placeholder-class="input-placehoder"/>
+</view>

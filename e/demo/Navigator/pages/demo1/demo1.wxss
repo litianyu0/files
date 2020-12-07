@@ -1,0 +1,9 @@
+/* pages/demo1/demo1.wxss */
+.hover-class{
+  color: red;
+}
+.hover-demo{
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}

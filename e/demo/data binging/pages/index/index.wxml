@@ -1,0 +1,67 @@
+<!--index.wxml-->
+<!-- 框架最大的特点 ： 让开发者必须按照特定的方式编写代码 -->
+<!-- 1.数据在哪 （当前页面对象的data属性中）-->
+<!-- 2.帮到哪去 （想用在哪就用在哪--,mustache语法输出）-->
+<view class="container">
+  <!-- {{}}叫做mustache -->
+  <text>{{ mesasge }}</text>
+  <text>{{ person.name }}</text>
+  <!-- mustache用在：
+  1.innerHTML（类似）
+  2.元素的属性上（不能用在标签名、属性名上） -->
+  <!-- <view class="{{ viewName }}"></view> -->
+  <view class="world {{ viewName }}"></view>
+  <!-- 可以使用自变量与简单运算符 -->
+  <text>{{ 3+5 }}</text>
+  <!-- <text>{{ 3<5 ?"wromg" ： "right" }}</text> -->
+  <checkbox checked="true"></checkbox>
+<!-- 当语法解析误解了true/false，可以用{{}}解决 -->
+  <checkbox checked="{{ false }}"></checkbox>
+
+<!-- 数据是数组 -->
+<!-- 列表数据渲染(绑定) -->
+<view>
+  <!-- <view>
+    <checkbox></checkbox>
+    <text>JavaScript</text>
+  </view>
+  <view>
+    <checkbox checked="{{ true }}"></checkbox>
+    <text>HTML</text>
+  </view>
+  <view>
+    <checkbox></checkbox>
+    <text>CSS</text>
+  </view> -->
+<!-- 1.for循环 -->
+  <!-- index为下标 -->
+  <view wx:for="{{ todos }}">
+    <text>{{index}}</text>
+    <checkbox checked="{{ item.completed }}"></checkbox>
+    <text>{{item.name}}</text>
+  </view>
+<!-- 如果全局有以item/index这种关键词，起别名 就可以（如wx:for-item="aaa"   wx:for-index="i"） -->
+  <view wx:for="{{ todos }}" wx:for-item="aaa" wx:for-index="i">
+    <text>{{i}}</text>
+    <checkbox checked="{{ aaa.completed }}"></checkbox>
+    <text>{{aaa.name}}</text>
+    <text>{{item}}</text>
+  </view>
+  <!-- ！！！上述二者都可以，都正确，可以不起别名，因为有数组名的限制 -->
+</view>
+  <!-- 
+  1.明确页面结构的循环体
+  2.删除多余的重复内容，只保留一个
+  3.在剩下的这个上加上wx:for属性，属性值等于要遍历的数据源，数据源必须是一个数组
+  4.在这个标签(循环体)内部使用item代表当前被遍历的元素 -->
+<!-- for循环的嵌套 -->
+  <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="i">
+    <view wx:for="{{[1, 2, 3, 4, 5, 6, 7, 8, 9]}}" wx:for-item="j">
+      <!-- wx:if用来根据boolean值，决定显示或者隐藏 -->
+      <view wx:if="{{i <= j}}">
+        {{i}} * {{j}} = {{i * j}}
+      </view>
+    </view>
+</view>
+</view>
+

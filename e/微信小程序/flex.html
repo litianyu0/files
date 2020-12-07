@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Flex Box</title>
+	<style> 
+	/* 
+	1.设计好DOM结构
+	2.将父盒子设置为伸缩盒子
+	*/
+	html,body{
+	   height: 100%;
+	}
+	body{
+	 margin:0;
+	}
+	.root{
+		/* 将父盒子设置为伸缩盒子*/
+	  display: flex;
+	  border:2px solid red;
+	  height: 100%;
+	}
+
+	.header{
+	   background-color: red;
+	   height: 60px;
+	   }
+	.sidebar{
+	   background-color: #ff0;
+	   width:300px;
+	}
+	.content{
+	   background-color: pink;
+	   flex:1;
+	}
+	</style>
+</head>
+<body>
+		<div class="header"></div>
+	<div class="root">
+		<div class="sidebar"></div>
+		<div class="content"></div>
+	</div>
+</body>
+</html>

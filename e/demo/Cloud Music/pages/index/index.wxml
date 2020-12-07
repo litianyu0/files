@@ -1,0 +1,57 @@
+<!--index.wxml-->
+<view class="root">
+  <!-- 1.标签栏的页签（固定高度） -->
+  <view class="tabs">
+    <!-- 容器中的内容，起到撑起容器高度 -->
+    <view class="item active" wx:for="{{tabs}}">
+      <text>{{item}}</text>
+    </view>
+  </view>
+  <!-- 内容区域（自适应高度） -->
+  <!-- -----------------------3.其他区域------------------------- -->
+  <scroll-view class="content" scroll-y>
+    <!-- 轮播图 -->
+    <view class="slide">
+      <image src="/images/slide.jpg"/>
+    </view>
+    <!-- 音乐入口区 -->
+    <view class="portals">
+      <view class="item" wx:for="{{portalsList}}">
+        <image src="{{item.img}}"/>
+        <text>{{item.name}}</text>
+      </view>
+    </view>
+    <!-- 图片list区 -->
+    <view class="musicList">
+      <view class="title">
+        <text>推荐歌单</text>
+      </view>
+      <view class="inner">
+        <view class="item" wx:for="{{musicList}}">
+          <image src="{{item.img}}"></image>
+          <text>{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+<!-- ------------------------------------------ -->
+<!-- 2.播放控制条 -->
+  <view class="player">
+    <!--海报/图片区(固定宽度)-->
+    <view class="poster">
+      <image src="../../images/poster.jpg" ></image>
+    </view>
+    <!--歌曲信息区（自适应宽度）-->
+    <view class="info" >
+      <text >十一年</text>
+      <text >邱永年</text>
+    </view>
+    <!--播放控制区（固定区域）-->
+    <view class="controls">
+      <image src="/images/01.jpg"></image>
+      <image src="/images/02.jpg"></image>
+      <image src="/images/03.jpg"></image>
+    </view>
+  </view>
+
+</view>

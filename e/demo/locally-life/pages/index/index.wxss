@@ -1,0 +1,43 @@
+/**index.wxss**/
+.slides{
+  height: 280rpx;
+}
+.slides navigator,.slides image{
+  width: 100%;
+  height: 100%;
+}
+.grids{
+  display: flex;
+  flex-wrap: wrap;/*flex自动换行*/ 
+  background-color: #fff;
+  border-left: 1rpx solid #eee;
+  border-bottom: 1rpx solid #eee;
+}
+.grids .item{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;/*主轴居中*/
+  align-items: center;/*侧轴居中*/
+  width: 33.33333333%;/*宽度不管，用33.3%*/
+  height:250rpx;
+  border-right: 1rpx solid #eee;
+  border-top: 1rpx solid #eee;
+  box-sizing: border-box;/*以边框为item盒子的范围*/
+}
+/* 注意：九宫格边框样式，父有左与底部，子只有右和上border， */
+.grids .item image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.grids .item text{
+  margin: 20rpx;
+  color: #888;
+  font-size: 28rpx;
+}
+.links{
+  display: flex;
+}
+.links image{
+  flex: 1;
+  height: 200rpx;
+}

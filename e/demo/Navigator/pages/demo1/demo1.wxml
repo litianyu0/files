@@ -1,0 +1,20 @@
+<!-- 跳转（页面相对路径） -->
+<text>demo1页面</text>
+<navigator url="../demo2/demo2?name='小明' & age=23">小明</navigator>
+
+<!-- 页面传值：
+传递：跳转链接 加 问号参数
+接收：js文件中，onload方法的第一个参数（对象） -->
+<navigator url="../demo2/demo2" redirect>跳过去不回来了</navigator>
+
+<!-- 点击高亮 -->
+<navigator hover-class="hover-class">点击高亮</navigator>
+<navigator hover-class="none">点击不高亮</navigator>
+<!-- 让普通标签有高亮效果 -->
+<!-- 法1：navigator包括此标签
+     法2；通过cursor: pointer -->
+<!-- 通过cursor: pointer可以让任何一个标签高亮（小技巧） -->
+<image class="hover-demo" src="/images/eleven years.jpg"></image>
+
+<!-- 页面导航API -->
+<button type="primary" bindtap="tapHandle">点击</button>

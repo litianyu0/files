@@ -1,0 +1,39 @@
+<!--index.wxml-->
+<view class="container">
+    <view class="item">
+      <view class="title" bindtap="toggle">
+        <text>切换面板展示</text>
+      </view>
+      <!--2. block用来控制多个元素  ， -->
+        <!-- 它只是控制属性的载体，页面渲染的过程中没有实际意义  -->
+      <block wx:if="{{show}}">
+        <view class="content" >
+          <text>
+            内容1...
+            内容1...
+            内容1...
+          </text>
+        </view>
+        <view class="content" >
+          <text>
+            内容2...
+            内容2...
+            内容2...
+          </text>
+        </view>
+      </block>
+
+<!-- 3.hidden -->
+        <view class="content" hidden="{{!show}}">
+          <text>
+            内容3...
+            内容3...
+            内容3...
+          </text>
+        </view>
+        hidden与wx:if区别
+        hidden是隐藏， wx:if指的是是否存在
+        if真的时候存在,hidden真的时候隐藏
+        wx:if当条件是假的时，就是不渲染（不工作，节省内存）；hidden标签工作，只是不显示(常切换)
+    </view>
+</view>

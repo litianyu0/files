@@ -1,0 +1,7 @@
+<!--index.wxml-->
+<view class="container">
+  <button type="primary" bindtap="btnTodo1">点击1</button>
+  <button  bindtap="btnTodo2">点击2</button>
+  <button  bindtap="btnTodo3">点击3</button>
+
+</view>
